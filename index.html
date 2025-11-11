@@ -3,108 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel & Tourism</title>
+    <title>Luxury Travel & Tourism</title>
+
+    <!-- Google Luxury Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: #111;
+            color: #fff;
         }
 
-        /* Hero Section */
+        /* NAVBAR */
+        nav {
+            background: #000;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #d6c27a;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #d6c27a;
+            font-weight: 900;
+        }
+
+        /* HERO */
         .hero {
-            background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+            background-image: url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80");
             background-size: cover;
             background-position: center;
-            height: 70vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-size: 3rem;
-            text-shadow: 2px 2px 10px black;
-        }
-
-        /* Section Title */
-        h2 {
             text-align: center;
-            margin-top: 40px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            text-shadow: 3px 3px 12px black;
         }
 
-        /* Gallery */
+        /* SECTION TITLE */
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #d6c27a;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 2.3rem;
+        }
+
+        /* GALLERY */
         .gallery {
             display: flex;
-            gap: 10px;
-            padding: 20px;
+            gap: 15px;
+            padding: 25px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .gallery img {
-            width: 300px;
-            height: 200px;
+            width: 330px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 12px;
+            border: 2px solid #d6c27a;
         }
 
-        /* Packages */
+        /* PACKAGES */
         .packages {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 30px;
+            gap: 25px;
+            padding: 40px;
             flex-wrap: wrap;
         }
 
         .card {
-            width: 250px;
-            padding: 15px;
-            border-radius: 10px;
-            background: #f3f3f3;
-            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            width: 260px;
+            padding: 18px;
+            border-radius: 12px;
+            background: #1a1a1a;
+            border: 1px solid #d6c27a;
             text-align: center;
         }
 
         .card img {
             width: 100%;
-            height: 150px;
+            height: 160px;
             object-fit: cover;
             border-radius: 8px;
         }
+
+        /* TABLE SECTION */
+        table {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        table th {
+            background: #d6c27a;
+            color: black;
+        }
+
+        table, th, td {
+            border: 1px solid #d6c27a;
+            border-collapse: collapse;
+            padding: 12px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            color: #d6c27a;
+            margin-top: 50px;
+        }
     </style>
 </head>
+
 <body>
 
-    <div class="hero">Explore India 🌍</div>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Royal India Tours</div>
+    <div>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#problems">Problems & Solutions</a>
+    </div>
+</nav>
 
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?auto=format&fit=crop&w=800&q=80">
+<!-- HERO -->
+<div class="hero">Explore India With Luxury ✨</div>
+
+<!-- GALLERY -->
+<h2 id="gallery">Destination Gallery</h2>
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?auto=format&fit=crop&w=800&q=80">
+</div>
+
+<!-- PACKAGES -->
+<h2 id="packages">Luxury Travel Packages</h2>
+<div class="packages">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea">
+        <h3>Goa Beach Royal Stay</h3>
+        <p>3 Days / 2 Nights – ₹18,000/-</p>
     </div>
 
-    <h2>Tour Packages</h2>
-    <div class="packages">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?auto=format&fit=crop&w=800&q=80">
-            <h3>Goa Beach Trip</h3>
-            <p>3 Days / 2 Nights – ₹8,000/-</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1550565118-3a14e74a33bb?auto=format&fit=crop&w=800&q=80">
-            <h3>Manali Hills Tour</h3>
-            <p>5 Days / 4 Nights – ₹15,000/-</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80">
-            <h3>Jaipur Heritage Trip</h3>
-            <p>2 Days / 1 Night – ₹6,000/-</p>
-        </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b">
+        <h3>Manali Premium Hills</h3>
+        <p>5 Days / 4 Nights – ₹32,000/-</p>
     </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada">
+        <h3>Jaipur Heritage Luxury</h3>
+        <p>2 Days / 1 Night – ₹12,000/-</p>
+    </div>
+</div>
+
+<!-- PROBLEMS & SOLUTIONS SECTION -->
+<h2 id="problems">Travel Problems & Solutions</h2>
+<div style="padding: 20px; max-width: 900px; margin: auto;">
+<table style="width:100%;">
+    <tr>
+        <th>Problem</th>
+        <th>Solution</th>
+    </tr>
+    <tr>
+        <td>Choosing where to travel</td>
+        <td>Gallery and destination insights help decision making</td>
+    </tr>
+    <tr>
+        <td>Budget Confusion</td>
+        <td>Clear package pricing for easy comparison</td>
+    </tr>
+    <tr>
+        <td>Local information missing</td>
+        <td>We provide cultural insights, guides & best visit times</td>
+    </tr>
+    <tr>
+        <td>Language barrier</td>
+        <td>Communication phrase guides included</td>
+    </tr>
+    <tr>
+        <td>Safety Concerns</td>
+        <td>Emergency and safety tips provided</td>
+    </tr>
+</table>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Royal India Tours | Designed with Elegance ✨
+</footer>
 
 </body>
 </html>
-
