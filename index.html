@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel & Tourism</title>
+    <title>Luxury Travel & Tourism</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
         }
 
-        /* Hero Section */
+        nav {
+            background: #111;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #d6c27a;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #d6c27a;
+            font-weight: 900;
+        }
+
         .hero {
             background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
             background-size: cover;
@@ -22,19 +53,19 @@
             justify-content: center;
             align-items: center;
             color: white;
+            font-family: 'Playfair Display', serif;
             font-size: 3rem;
             text-shadow: 2px 2px 10px black;
         }
 
-        /* Titles */
         h2 {
             text-align: center;
             margin-top: 50px;
-            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            color: #d6c27a;
         }
 
-        /* Gallery */
-        .gallery {
+        .gallery, .packages {
             display: flex;
             gap: 12px;
             padding: 20px;
@@ -42,27 +73,25 @@
             flex-wrap: wrap;
         }
 
+        .gallery img, .card img {
+            border-radius: 8px;
+        }
+
         .gallery img {
             width: 300px;
             height: 200px;
             object-fit: cover;
-            border-radius: 8px;
         }
 
-        /* Packages */
         .packages {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
             padding: 30px;
-            flex-wrap: wrap;
         }
 
         .card {
             width: 250px;
             padding: 15px;
             border-radius: 10px;
-            background: #f3f3f3;
+            background: #fff;
             box-shadow: 0 0 8px rgba(0,0,0,0.2);
             text-align: center;
         }
@@ -74,7 +103,6 @@
             border-radius: 8px;
         }
 
-        /* Sections with text + image */
         .section-box {
             max-width: 900px;
             margin: auto;
@@ -90,80 +118,168 @@
             margin-bottom: 20px;
         }
 
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            background: #d6c27a;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #bfa65a;
+        }
+
+        footer {
+            background: #111;
+            color: #d6c27a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #d6c27a;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="hero">Explore India 🌍</div>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Royal India Tours</div>
+        <div>
+            <a href="#gallery">Gallery</a>
+            <a href="#packages">Packages</a>
+            <a href="#kerala">Kerala</a>
+            <a href="#ooty">Ooty Lake</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Gallery -->
-    <h2>Gallery</h2>
+    <!-- HERO -->
+    <div class="hero">Explore India With Luxury ✨</div>
+
+    <!-- GALLERY -->
+    <h2 id="gallery">Destination Gallery</h2>
     <div class="gallery">
         <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
         <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
         <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
     </div>
 
-    <!-- Tour Packages -->
-    <h2>Tour Packages</h2>
+    <!-- PACKAGES -->
+    <h2 id="packages">Luxury Travel Packages</h2>
     <div class="packages">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
             <h3>Goa Beach Trip</h3>
-            <p>3 Days / 2 Nights – ₹8,000/-</p>
+            <p>3 Days / 2 Nights – ₹18,000/-</p>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-            <h3>Manali Hills Tour</h3>
-            <p>5 Days / 4 Nights – ₹15,000/-</p>
+            <h3>Manali Premium Hills</h3>
+            <p>5 Days / 4 Nights – ₹32,000/-</p>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1548013146-72479768bada">
-            <h3>Jaipur Heritage Trip</h3>
-            <p>2 Days / 1 Night – ₹6,000/-</p>
+            <h3>Jaipur Heritage Luxury</h3>
+            <p>2 Days / 1 Night – ₹12,000/-</p>
         </div>
     </div>
 
-    <!-- Explore Kerala Section -->
-    <h2>Explore Kerala</h2>
+    <!-- EXPLORE KERALA -->
+    <h2 id="kerala">Explore Kerala</h2>
     <div class="section-box">
         <img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33">
         <p>
-            Kerala is known as "God's Own Country" for its lush greenery, serene backwaters, hill stations, and beaches. 
-            One of its most beautiful coastal cities is <strong>Kochi (Cochin)</strong>, famous for cultural history, art 
-            cafés, and seaside views.
+            Kerala, "God's Own Country", is famous for its backwaters, beaches, and hill stations.
+            <strong>Kochi</strong> is a vibrant coastal city blending culture, history, and modern attractions.
         </p>
-
         <h3>Kochi Highlights</h3>
         <ul>
             <li>Fort Kochi Heritage Streets</li>
-            <li>Chinese Fishing Nets Sunset View</li>
-            <li>Marine Drive Sea Walk</li>
-            <li>Mattancherry Spice Market & Jew Town</li>
-            <li>Lulu Mall Shopping Experience</li>
+            <li>Chinese Fishing Nets</li>
+            <li>Marine Drive Walk</li>
+            <li>Mattancherry & Jew Town</li>
+            <li>Lulu Mall Shopping</li>
         </ul>
     </div>
 
-    <!-- Ooty Lake Section -->
-    <h2>Ooty Lake</h2>
+    <!-- OOTY LAKE -->
+    <h2 id="ooty">Ooty Lake</h2>
     <div class="section-box">
         <img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33">
         <p>
-            <strong>Ooty Lake</strong> is the heart of Ooty, surrounded by eucalyptus trees and misty mountain views.
-            Visitors enjoy peaceful boat rides, lakeside cycling, and nature photography.
+            Ooty Lake is the heart of Ooty, surrounded by misty hills and eucalyptus trees.
+            Visitors enjoy boating, cycling, and photography.
         </p>
-
         <h3>Things to Do</h3>
         <ul>
-            <li>Boating (Pedal, Row & Motor Boats)</li>
-            <li>Lakeside Cycling Track</li>
-            <li>Photography with Hill Views</li>
-            <li>Small amusement zone for kids</li>
+            <li>Pedal, row & motor boat rides</li>
+            <li>Lakeside cycling</li>
+            <li>Photography with mountain views</li>
+            <li>Mini amusement rides for kids</li>
         </ul>
     </div>
 
+    <!-- ABOUT US -->
+    <h2 id="about">About Us</h2>
+    <div class="section-box">
+        <p>
+            Royal India Tours is a project-based tourism website designed for students to explore India’s 
+            top destinations in Kerala, Ooty, Goa, Manali, and Jaipur. The site provides travel tips, 
+            sightseeing guides, and curated packages for hassle-free trips.
+        </p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <h2 id="contact">Contact Us</h2>
+    <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button>Send Message</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Royal India Tours | 
+        <a href="#">Instagram</a> | 
+        <a href="#">YouTube</a> | 
+        <a href="#">Email</a>
+    </footer>
+
 </body>
 </html>
+
 
