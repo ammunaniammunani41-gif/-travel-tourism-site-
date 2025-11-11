@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel & Tourism</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Travel & Tourism</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Trip Planner</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover Your Next Adventure</h2>
+    <p>Explore beautiful destinations, plan your perfect trip, and get inspired.</p>
+    <input type="text" placeholder="Search destinations...">
+  </section>
+
+  <section class="featured">
+    <h3>Featured Destinations</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="images/paris.jpg" alt="Paris">
+        <h4>Paris</h4>
+      </div>
+      <div class="card">
+        <img src="images/bali.jpg" alt="Bali">
+        <h4>Bali</h4>
+      </div>
+      <div class="card">
+        <img src="images/newyork.jpg" alt="New York">
+        <h4>New York</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel & Tourism. All rights reserved.</p>
+  </footer>
+</body>
+</html>
