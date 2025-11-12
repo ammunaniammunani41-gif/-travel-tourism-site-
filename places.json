@@ -1,81 +1,92 @@
 {
   "kerala": {
-    "attractions": [
-      "Munnar",
-      "Alleppey Backwaters",
-      "Kovalam Beach",
-      "Thekkady Wildlife Sanctuary"
-    ],
-    "food": [
-      "Appam with Stew",
-      "Puttu and Kadala Curry",
-      "Kerala Sadya"
-    ],
+    "attractions": ["Munnar", "Alleppey Backwaters", "Kovalam Beach"],
+    "food": ["Appam with Stew", "Puttu and Kadala Curry"],
     "transport": {
-      "car": "Kerala has a good road network connecting major cities like Kochi, Munnar, and Alleppey.",
-      "train": "Kerala is well connected by train through stations like Ernakulam and Trivandrum.",
-      "flight": "Cochin International Airport and Trivandrum International Airport serve Kerala."
+      "car": "Beautiful road routes through hills and beaches.",
+      "train": "Trains from Chennai, Bangalore, and Mumbai.",
+      "flight": "Cochin, Trivandrum, and Calicut Airports."
     }
   },
   "goa": {
-    "attractions": [
-      "Baga Beach",
-      "Fort Aguada",
-      "Basilica of Bom Jesus",
-      "Dudhsagar Waterfalls"
-    ],
-    "food": [
-      "Fish Curry Rice",
-      "Prawn Balchao",
-      "Bebinca"
-    ],
+    "attractions": ["Baga Beach", "Fort Aguada", "Dudhsagar Waterfalls"],
+    "food": ["Fish Curry Rice", "Bebinca"],
     "transport": {
-      "car": "Self-drive cars and taxis are available across Goa.",
-      "train": "Madgaon and Vasco da Gama are main railway stations.",
-      "flight": "Dabolim Airport connects Goa to other major cities."
+      "car": "Best for exploring beaches and nightlife.",
+      "train": "Well connected via Konkan Railway.",
+      "flight": "Dabolim Airport connects major Indian cities."
     }
   },
   "jaipur": {
-    "attractions": [
-      "Amber Fort",
-      "City Palace",
-      "Hawa Mahal",
-      "Nahargarh Fort",
-      "Jantar Mantar"
-    ],
-    "food": [
-      "Dal Baati Churma",
-      "Ghevar",
-      "Pyaaz Kachori",
-      "Rajasthani Thali"
-    ],
+    "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"],
+    "food": ["Dal Baati Churma", "Ghevar"],
     "transport": {
-      "car": "Jaipur is well-connected by road and car rentals are available.",
-      "train": "Jaipur Junction connects to major cities like Delhi and Mumbai.",
-      "flight": "Jaipur International Airport serves domestic and international flights."
+      "car": "Cabs and taxis are easily available.",
+      "train": "Jaipur Junction connects to all major cities.",
+      "flight": "Jaipur International Airport operates daily flights."
     }
   },
   "delhi": {
-    "attractions": [
-      "India Gate",
-      "Red Fort",
-      "Qutub Minar",
-      "Lotus Temple",
-      "Akshardham Temple"
-    ],
-    "food": [
-      "Chole Bhature",
-      "Paratha",
-      "Butter Chicken",
-      "Gol Gappa"
-    ],
+    "attractions": ["India Gate", "Red Fort", "Qutub Minar"],
+    "food": ["Paratha", "Chole Bhature", "Butter Chicken"],
     "transport": {
-      "car": "Delhi has a wide road network and app-based cabs available.",
-      "train": "New Delhi and Nizamuddin stations connect across India.",
-      "flight": "Indira Gandhi International Airport is the main airport."
+      "car": "Available taxis and self-drive rentals.",
+      "train": "New Delhi Railway Station is a major hub.",
+      "flight": "Indira Gandhi International Airport connects worldwide."
+    }
+  },
+  "ooty": {
+    "attractions": ["Ooty Lake", "Doddabetta Peak", "Botanical Gardens"],
+    "food": ["Homemade Chocolates", "Varkey"],
+    "transport": {
+      "car": "Drive via scenic Nilgiri hills.",
+      "train": "Toy Train from Mettupalayam is popular.",
+      "flight": "Nearest airport is Coimbatore."
+    }
+  },
+  "agra": {
+    "attractions": ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
+    "food": ["Petha", "Bedai and Jalebi"],
+    "transport": {
+      "car": "4-hour drive from Delhi via Yamuna Expressway.",
+      "train": "Well connected via Agra Cantt.",
+      "flight": "Agra Airport has limited connectivity."
+    }
+  },
+  "mumbai": {
+    "attractions": ["Gateway of India", "Marine Drive", "Elephanta Caves"],
+    "food": ["Vada Pav", "Pav Bhaji"],
+    "transport": {
+      "car": "Excellent highways and city cab services.",
+      "train": "Local and long-distance trains available.",
+      "flight": "Chhatrapati Shivaji Maharaj International Airport."
+    }
+  },
+  "chennai": {
+    "attractions": ["Marina Beach", "Fort St. George", "Kapaleeshwarar Temple"],
+    "food": ["Idli", "Dosa", "Sambar"],
+    "transport": {
+      "car": "Well-connected roads within Tamil Nadu.",
+      "train": "Chennai Central connects nationwide.",
+      "flight": "Chennai International Airport."
+    }
+  },
+  "manali": {
+    "attractions": ["Solang Valley", "Rohtang Pass", "Hadimba Temple"],
+    "food": ["Sidu", "Trout Fish"],
+    "transport": {
+      "car": "Drive from Delhi or Chandigarh is scenic.",
+      "train": "Nearest station is Joginder Nagar.",
+      "flight": "Bhuntar Airport near Kullu."
+    }
+  },
+  "darjeeling": {
+    "attractions": ["Tiger Hill", "Batasia Loop", "Peace Pagoda"],
+    "food": ["Momos", "Thukpa"],
+    "transport": {
+      "car": "Drive from Siliguri through hills.",
+      "train": "Toy Train from New Jalpaiguri.",
+      "flight": "Nearest airport is Bagdogra."
     }
   }
 }
-
-
-
