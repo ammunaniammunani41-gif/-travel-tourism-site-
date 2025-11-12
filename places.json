@@ -1,8 +1,15 @@
 {
   "kerala": {
-    "image": "https://images.unsplash.com/photo-1603264049442-3f74a5e41d83",
-    "attractions": ["Munnar", "Alleppey Backwaters", "Kovalam Beach"],
-    "food": ["Appam with Stew", "Puttu and Kadala Curry"],
+    "images": [
+      "https://images.unsplash.com/photo-1603264049442-3f74a5e41d83",
+      "https://images.unsplash.com/photo-1593691509543-1375b64b64d4",
+      "https://images.unsplash.com/photo-1548013146-72479768bada",
+      "https://images.unsplash.com/photo-1602670834339-d73f597d05f3",
+      "https://images.unsplash.com/photo-1568715689075-84755908b1b1"
+    ],
+    "map": "https://www.google.com/maps/place/Kerala",
+    "attractions": ["Munnar", "Alleppey Backwaters", "Kovalam Beach", "Wayanad", "Thekkady"],
+    "food": ["Appam with Stew", "Puttu and Kadala Curry", "Fish Moilee", "Sadya", "Parotta with Beef Curry"],
     "transport": {
       "car": "Beautiful road routes through hills and beaches.",
       "train": "Trains from Chennai, Bangalore, and Mumbai.",
@@ -10,29 +17,50 @@
     }
   },
   "goa": {
-    "image": "https://images.unsplash.com/photo-1589308078055-56a6d2d6d9d7",
-    "attractions": ["Baga Beach", "Fort Aguada", "Dudhsagar Waterfalls"],
-    "food": ["Fish Curry Rice", "Bebinca"],
+    "images": [
+      "https://images.unsplash.com/photo-1589308078055-56a6d2d6d9d7",
+      "https://images.unsplash.com/photo-1570544820258-9da1a17b3e6d",
+      "https://images.unsplash.com/photo-1602810318383-d4a1b003cd3a",
+      "https://images.unsplash.com/photo-1601979031925-424e53b6af7c",
+      "https://images.unsplash.com/photo-1563890728000-9d4c0b9a7a70"
+    ],
+    "map": "https://www.google.com/maps/place/Goa",
+    "attractions": ["Baga Beach", "Fort Aguada", "Dudhsagar Waterfalls", "Anjuna Market", "Basilica of Bom Jesus"],
+    "food": ["Fish Curry Rice", "Bebinca", "Vindaloo", "Xacuti", "Prawn Balchão"],
     "transport": {
       "car": "Best for exploring beaches and nightlife.",
       "train": "Well connected via Konkan Railway.",
       "flight": "Dabolim Airport connects major Indian cities."
     }
   },
-  "jaipur": {
-    "image": "https://images.unsplash.com/photo-1583423230902-b653abc541eb",
-    "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"],
-    "food": ["Dal Baati Churma", "Ghevar"],
+  "hyderabad": {
+    "images": [
+      "https://images.unsplash.com/photo-1596500187612-d1b87e9847b3",
+      "https://images.unsplash.com/photo-1609436134539-c37ad1fcb5a7",
+      "https://images.unsplash.com/photo-1622896513693-3f657a47aa39",
+      "https://images.unsplash.com/photo-1623116909705-8b2c6f79e289",
+      "https://images.unsplash.com/photo-1624435940441-4ccf3f88d67f"
+    ],
+    "map": "https://www.google.com/maps/place/Hyderabad",
+    "attractions": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake", "Salar Jung Museum"],
+    "food": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha", "Irani Chai", "Pathar Ka Gosht"],
     "transport": {
-      "car": "Cabs and taxis are easily available.",
-      "train": "Jaipur Junction connects to all major cities.",
-      "flight": "Jaipur International Airport operates daily flights."
+      "car": "Hyderabad has well-developed roads and taxi services.",
+      "train": "Connected via Secunderabad and Hyderabad Deccan stations.",
+      "flight": "Rajiv Gandhi International Airport connects major cities globally."
     }
   },
   "delhi": {
-    "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0b",
-    "attractions": ["India Gate", "Red Fort", "Qutub Minar"],
-    "food": ["Paratha", "Chole Bhature", "Butter Chicken"],
+    "images": [
+      "https://images.unsplash.com/photo-1565084888279-aca607ecce0b",
+      "https://images.unsplash.com/photo-1598454442430-4015d16b2b6d",
+      "https://images.unsplash.com/photo-1585121472517-fbd80d8e8cbb",
+      "https://images.unsplash.com/photo-1618221470802-5f8f865b3f09",
+      "https://images.unsplash.com/photo-1616401783022-61a3cb0c040f"
+    ],
+    "map": "https://www.google.com/maps/place/New+Delhi",
+    "attractions": ["India Gate", "Red Fort", "Qutub Minar", "Lotus Temple", "Akshardham Temple"],
+    "food": ["Paratha", "Chole Bhature", "Butter Chicken", "Kebabs", "Jalebi"],
     "transport": {
       "car": "Available taxis and self-drive rentals.",
       "train": "New Delhi Railway Station is a major hub.",
@@ -40,73 +68,200 @@
     }
   },
   "ooty": {
-    "image": "https://images.unsplash.com/photo-1625300421190-8d13eebdc1e8",
-    "attractions": ["Ooty Lake", "Doddabetta Peak", "Botanical Gardens"],
-    "food": ["Homemade Chocolates", "Varkey"],
+    "images": [
+      "https://images.unsplash.com/photo-1625300421190-8d13eebdc1e8",
+      "https://images.unsplash.com/photo-1600785443393-826a7cc3aee1",
+      "https://images.unsplash.com/photo-1587655965488-b6b0de6e2f14",
+      "https://images.unsplash.com/photo-1617875211143-8f93ac3b1792",
+      "https://images.unsplash.com/photo-1570474932347-13d6f0566e8f"
+    ],
+    "map": "https://www.google.com/maps/place/Ooty",
+    "attractions": ["Ooty Lake", "Doddabetta Peak", "Botanical Gardens", "Pykara Falls", "Tea Museum"],
+    "food": ["Homemade Chocolates", "Varkey", "Ooty Tea", "Bread Omelet", "Chicken Chettinad"],
     "transport": {
       "car": "Drive via scenic Nilgiri hills.",
       "train": "Toy Train from Mettupalayam is popular.",
       "flight": "Nearest airport is Coimbatore."
     }
-  },
-  "agra": {
-    "image": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
-    "attractions": ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
-    "food": ["Petha", "Bedai and Jalebi"],
-    "transport": {
-      "car": "4-hour drive from Delhi via Yamuna Expressway.",
-      "train": "Well connected via Agra Cantt.",
-      "flight": "Agra Airport has limited connectivity."
-    }
-  },
-  "mumbai": {
-    "image": "https://images.unsplash.com/photo-1504215680853-026ed2a45def",
-    "attractions": ["Gateway of India", "Marine Drive", "Elephanta Caves"],
-    "food": ["Vada Pav", "Pav Bhaji"],
-    "transport": {
-      "car": "Excellent highways and city cab services.",
-      "train": "Local and long-distance trains available.",
-      "flight": "Chhatrapati Shivaji Maharaj International Airport."
-    }
-  },
-  "chennai": {
-    "image": "https://images.unsplash.com/photo-1583247756071-7b788c6d0f6b",
-    "attractions": ["Marina Beach", "Fort St. George", "Kapaleeshwarar Temple"],
-    "food": ["Idli", "Dosa", "Sambar"],
-    "transport": {
-      "car": "Well-connected roads within Tamil Nadu.",
-      "train": "Chennai Central connects nationwide.",
-      "flight": "Chennai International Airport."
-    }
-  },
-  "manali": {
-    "image": "https://images.unsplash.com/photo-1600508774583-5ec2b4b1dc5e",
-    "attractions": ["Solang Valley", "Rohtang Pass", "Hadimba Temple"],
-    "food": ["Sidu", "Trout Fish"],
-    "transport": {
-      "car": "Drive from Delhi or Chandigarh is scenic.",
-      "train": "Nearest station is Joginder Nagar.",
-      "flight": "Bhuntar Airport near Kullu."
-    }
-  },
-  "darjeeling": {
-    "image": "https://images.unsplash.com/photo-1602694588963-42e6a59e5c2d",
-    "attractions": ["Tiger Hill", "Batasia Loop", "Peace Pagoda"],
-    "food": ["Momos", "Thukpa"],
-    "transport": {
-      "car": "Drive from Siliguri through hills.",
-      "train": "Toy Train from New Jalpaiguri.",
-      "flight": "Nearest airport is Bagdogra."
-    }
-  },
-  "hyderabad": {
-    "image": "https://images.unsplash.com/photo-1596500187612-d1b87e9847b3",
-    "attractions": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake"],
-    "food": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha"],
-    "transport": {
-      "car": "Hyderabad has well-developed roads and taxi services.",
-      "train": "Connected via Secunderabad and Hyderabad Deccan stations.",
-      "flight": "Rajiv Gandhi International Airport connects major cities globally."
-    }
+  }
+},
+"manali": {
+  "images": [
+    "https://images.unsplash.com/photo-1571400974805-5006b10a381a",
+    "https://images.unsplash.com/photo-1604676443133-45b48a5bb64a",
+    "https://images.unsplash.com/photo-1565182999561-18d7c9f7f7a1",
+    "https://images.unsplash.com/photo-1614516622471-1db1b3cce417",
+    "https://images.unsplash.com/photo-1617272477198-45c774a6472f"
+  ],
+  "map": "https://www.google.com/maps/place/Manali,+Himachal+Pradesh",
+  "attractions": ["Solang Valley", "Rohtang Pass", "Hidimba Temple", "Old Manali", "Beas River"],
+  "food": ["Trout Fish", "Sidu", "Dham", "Chha Gosht", "Babru"],
+  "transport": {
+    "car": "Scenic drive from Delhi or Chandigarh.",
+    "train": "Nearest railhead is Joginder Nagar.",
+    "flight": "Nearest airport is Kullu-Manali (Bhuntar)."
+  }
+},
+
+"jaipur": {
+  "images": [
+    "https://images.unsplash.com/photo-1585397308609-c6e1f84a4e9b",
+    "https://images.unsplash.com/photo-1585405588644-62f7b7a5e6aa",
+    "https://images.unsplash.com/photo-1586182987322-49f72b4e8b13",
+    "https://images.unsplash.com/photo-1603262110263-fb9b9e1d0c4b",
+    "https://images.unsplash.com/photo-1617468506095-d9078f2fdb8f"
+  ],
+  "map": "https://www.google.com/maps/place/Jaipur,+Rajasthan",
+  "attractions": ["Hawa Mahal", "Amber Fort", "City Palace", "Jantar Mantar", "Nahargarh Fort"],
+  "food": ["Dal Baati Churma", "Laal Maas", "Ghewar", "Kachori", "Mirchi Bada"],
+  "transport": {
+    "car": "Excellent highways from Delhi, Agra, Udaipur.",
+    "train": "Jaipur Junction connects to all metros.",
+    "flight": "Jaipur International Airport connects India & abroad."
+  }
+},
+
+"mumbai": {
+  "images": [
+    "https://images.unsplash.com/photo-1548013146-72479768bada",
+    "https://images.unsplash.com/photo-1601012358295-9c9a37f14f9b",
+    "https://images.unsplash.com/photo-1578474846511-06c02a0a30b8",
+    "https://images.unsplash.com/photo-1597503482243-1b26b9b5c297",
+    "https://images.unsplash.com/photo-1600073041309-b44c38a0c6c1"
+  ],
+  "map": "https://www.google.com/maps/place/Mumbai,+Maharashtra",
+  "attractions": ["Gateway of India", "Marine Drive", "Elephanta Caves", "Juhu Beach", "Colaba Causeway"],
+  "food": ["Vada Pav", "Pav Bhaji", "Bhel Puri", "Bombay Sandwich", "Keema Pav"],
+  "transport": {
+    "car": "Well-connected expressways and taxis.",
+    "train": "Major railway terminus connecting all of India.",
+    "flight": "Chhatrapati Shivaji International Airport."
+  }
+},
+
+"kolkata": {
+  "images": [
+    "https://images.unsplash.com/photo-1595250833450-67e5af5c8a9e",
+    "https://images.unsplash.com/photo-1580979361789-40ceaf885c7a",
+    "https://images.unsplash.com/photo-1605287895180-558b2a2b4c7f",
+    "https://images.unsplash.com/photo-1598379207718-cc6b5f88b00f",
+    "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+  ],
+  "map": "https://www.google.com/maps/place/Kolkata,+West+Bengal",
+  "attractions": ["Howrah Bridge", "Victoria Memorial", "Dakshineswar Temple", "Eden Gardens", "Science City"],
+  "food": ["Rosogolla", "Macher Jhol", "Kathi Roll", "Sandesh", "Mishti Doi"],
+  "transport": {
+    "car": "Good roads and taxi connectivity.",
+    "train": "Howrah and Sealdah are major railheads.",
+    "flight": "Netaji Subhas Chandra Bose International Airport."
+  }
+},
+
+"chennai": {
+  "images": [
+    "https://images.unsplash.com/photo-1578496479810-7d8a6bfc0a7e",
+    "https://images.unsplash.com/photo-1610629086281-5e6f918d80f8",
+    "https://images.unsplash.com/photo-1603895126869-c3f7b7c64af4",
+    "https://images.unsplash.com/photo-1619712953879-c389a61829e5",
+    "https://images.unsplash.com/photo-1585564440900-b3f9fbbdc44b"
+  ],
+  "map": "https://www.google.com/maps/place/Chennai,+Tamil+Nadu",
+  "attractions": ["Marina Beach", "Kapaleeshwarar Temple", "Fort St. George", "Guindy Park", "Santhome Church"],
+  "food": ["Dosa", "Idli", "Filter Coffee", "Chettinad Chicken", "Pongal"],
+  "transport": {
+    "car": "City roads and ECR coastal route are scenic.",
+    "train": "Chennai Central & Egmore are major stations.",
+    "flight": "Chennai International Airport connects globally."
+  }
+},
+"shimla": {
+  "images": [
+    "https://images.unsplash.com/photo-1599459379503-dff63b6d7f2e",
+    "https://images.unsplash.com/photo-1627308595186-78fef9d8fd7b",
+    "https://images.unsplash.com/photo-1602524218865-0f6cc95c65cb",
+    "https://images.unsplash.com/photo-1632118160482-4f88971cc90a",
+    "https://images.unsplash.com/photo-1617351637481-d58b3d06e7ad"
+  ],
+  "map": "https://www.google.com/maps/place/Shimla,+Himachal+Pradesh",
+  "attractions": ["Mall Road", "Jakhoo Temple", "Kufri", "Christ Church", "The Ridge"],
+  "food": ["Chana Madra", "Sidu", "Babru", "Thukpa", "Dham"],
+  "transport": {
+    "car": "Beautiful drive from Delhi or Chandigarh.",
+    "train": "Kalka–Shimla toy train offers scenic views.",
+    "flight": "Nearest airport is Jubbarhatti (22 km)."
+  }
+},
+
+"andaman": {
+  "images": [
+    "https://images.unsplash.com/photo-1571751662582-1fba7c5c3e8f",
+    "https://images.unsplash.com/photo-1604052772749-9aeb3e4a7a61",
+    "https://images.unsplash.com/photo-1596436889106-6b7c4d49c93d",
+    "https://images.unsplash.com/photo-1588011935813-2a9e1e967c8a",
+    "https://images.unsplash.com/photo-1583573636251-37b7951c84ad"
+  ],
+  "map": "https://www.google.com/maps/place/Andaman+and+Nicobar+Islands",
+  "attractions": ["Radhanagar Beach", "Cellular Jail", "Neil Island", "Havelock Island", "Ross Island"],
+  "food": ["Seafood Curry", "Fish Fry", "Lobster Masala", "Coconut Prawn Curry", "Andaman Fish Curry"],
+  "transport": {
+    "car": "Local taxis and rented scooters on the islands.",
+    "train": "No trains (islands).",
+    "flight": "Port Blair Airport connects to Chennai, Kolkata, and Delhi."
+  }
+},
+
+"ladakh": {
+  "images": [
+    "https://images.unsplash.com/photo-1612351041463-f0b64c9cbf4b",
+    "https://images.unsplash.com/photo-1606028893157-07e9a9e4a2d0",
+    "https://images.unsplash.com/photo-1625052399925-99a4561b0885",
+    "https://images.unsplash.com/photo-1610116306799-9b7c6e1db05b",
+    "https://images.unsplash.com/photo-1602331435796-9c10f6b3c6d9"
+  ],
+  "map": "https://www.google.com/maps/place/Ladakh",
+  "attractions": ["Pangong Lake", "Magnetic Hill", "Leh Palace", "Nubra Valley", "Shanti Stupa"],
+  "food": ["Thukpa", "Momos", "Butter Tea", "Skyu", "Tingmo"],
+  "transport": {
+    "car": "Manali-Leh and Srinagar-Leh highways offer scenic routes.",
+    "train": "No direct trains; Jammu Tawi is nearest.",
+    "flight": "Kushok Bakula Rimpochee Airport (Leh)."
+  }
+},
+
+"coorg": {
+  "images": [
+    "https://images.unsplash.com/photo-1616401783022-61a3cb0c040f",
+    "https://images.unsplash.com/photo-1599921959154-58bb2b8ec80f",
+    "https://images.unsplash.com/photo-1627392579077-ef4a0c4cc7c2",
+    "https://images.unsplash.com/photo-1621420814890-5eb7b1b7cbf7",
+    "https://images.unsplash.com/photo-1630822720901-0f82c635d76e"
+  ],
+  "map": "https://www.google.com/maps/place/Coorg,+Karnataka",
+  "attractions": ["Abbey Falls", "Dubare Elephant Camp", "Raja’s Seat", "Coffee Plantations", "Madikeri Fort"],
+  "food": ["Pandi Curry", "Akki Roti", "Kadambuttu", "Bamboo Shoot Curry", "Noolputtu"],
+  "transport": {
+    "car": "Best reached via road from Bangalore or Mysore.",
+    "train": "Nearest stations: Mysore (120 km).",
+    "flight": "Nearest airport: Mangalore (160 km)."
+  }
+},
+
+"varanasi": {
+  "images": [
+    "https://images.unsplash.com/photo-1572894469121-542e1f91c5f6",
+    "https://images.unsplash.com/photo-1610395219795-85b45c7b2db3",
+    "https://images.unsplash.com/photo-1575276980480-02c8ee9b3e7e",
+    "https://images.unsplash.com/photo-1613501893189-6bdfa818572d",
+    "https://images.unsplash.com/photo-1570799266014-0de54e5d6b70"
+  ],
+  "map": "https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh",
+  "attractions": ["Kashi Vishwanath Temple", "Dashashwamedh Ghat", "Sarnath", "Assi Ghat", "Ramnagar Fort"],
+  "food": ["Kachori Sabzi", "Banarasi Paan", "Lassi", "Tamatar Chaat", "Malaiyo"],
+  "transport": {
+    "car": "Well-connected highways from Lucknow & Allahabad.",
+    "train": "Major railway hub: Varanasi Junction.",
+    "flight": "Lal Bahadur Shastri Airport connects major cities."
   }
 }
+
+
