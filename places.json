@@ -1,5 +1,6 @@
 {
   "kerala": {
+    "image": "https://images.unsplash.com/photo-1603264049442-3f74a5e41d83",
     "attractions": ["Munnar", "Alleppey Backwaters", "Kovalam Beach"],
     "food": ["Appam with Stew", "Puttu and Kadala Curry"],
     "transport": {
@@ -9,6 +10,7 @@
     }
   },
   "goa": {
+    "image": "https://images.unsplash.com/photo-1589308078055-56a6d2d6d9d7",
     "attractions": ["Baga Beach", "Fort Aguada", "Dudhsagar Waterfalls"],
     "food": ["Fish Curry Rice", "Bebinca"],
     "transport": {
@@ -18,6 +20,7 @@
     }
   },
   "jaipur": {
+    "image": "https://images.unsplash.com/photo-1583423230902-b653abc541eb",
     "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"],
     "food": ["Dal Baati Churma", "Ghevar"],
     "transport": {
@@ -27,6 +30,7 @@
     }
   },
   "delhi": {
+    "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0b",
     "attractions": ["India Gate", "Red Fort", "Qutub Minar"],
     "food": ["Paratha", "Chole Bhature", "Butter Chicken"],
     "transport": {
@@ -36,6 +40,7 @@
     }
   },
   "ooty": {
+    "image": "https://images.unsplash.com/photo-1625300421190-8d13eebdc1e8",
     "attractions": ["Ooty Lake", "Doddabetta Peak", "Botanical Gardens"],
     "food": ["Homemade Chocolates", "Varkey"],
     "transport": {
@@ -45,6 +50,7 @@
     }
   },
   "agra": {
+    "image": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
     "attractions": ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
     "food": ["Petha", "Bedai and Jalebi"],
     "transport": {
@@ -54,6 +60,7 @@
     }
   },
   "mumbai": {
+    "image": "https://images.unsplash.com/photo-1504215680853-026ed2a45def",
     "attractions": ["Gateway of India", "Marine Drive", "Elephanta Caves"],
     "food": ["Vada Pav", "Pav Bhaji"],
     "transport": {
@@ -63,6 +70,7 @@
     }
   },
   "chennai": {
+    "image": "https://images.unsplash.com/photo-1583247756071-7b788c6d0f6b",
     "attractions": ["Marina Beach", "Fort St. George", "Kapaleeshwarar Temple"],
     "food": ["Idli", "Dosa", "Sambar"],
     "transport": {
@@ -72,6 +80,7 @@
     }
   },
   "manali": {
+    "image": "https://images.unsplash.com/photo-1600508774583-5ec2b4b1dc5e",
     "attractions": ["Solang Valley", "Rohtang Pass", "Hadimba Temple"],
     "food": ["Sidu", "Trout Fish"],
     "transport": {
@@ -81,6 +90,7 @@
     }
   },
   "darjeeling": {
+    "image": "https://images.unsplash.com/photo-1602694588963-42e6a59e5c2d",
     "attractions": ["Tiger Hill", "Batasia Loop", "Peace Pagoda"],
     "food": ["Momos", "Thukpa"],
     "transport": {
@@ -88,15 +98,15 @@
       "train": "Toy Train from New Jalpaiguri.",
       "flight": "Nearest airport is Bagdogra."
     }
-  }
-},
-"hyderabad": {
-  "attractions": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake"],
-  "food": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha"],
-  "transport": {
-    "car": "Hyderabad has well-developed roads and taxi services.",
-    "train": "Connected via Secunderabad and Hyderabad Deccan stations.",
-    "flight": "Rajiv Gandhi International Airport connects major cities globally."
+  },
+  "hyderabad": {
+    "image": "https://images.unsplash.com/photo-1596500187612-d1b87e9847b3",
+    "attractions": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake"],
+    "food": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha"],
+    "transport": {
+      "car": "Hyderabad has well-developed roads and taxi services.",
+      "train": "Connected via Secunderabad and Hyderabad Deccan stations.",
+      "flight": "Rajiv Gandhi International Airport connects major cities globally."
+    }
   }
 }
-
