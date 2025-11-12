@@ -1,30 +1,70 @@
-{
-  "kerala": {
-    "name": "Kerala",
-    "description": "Known as 'God’s Own Country', Kerala is famous for its backwaters, houseboats, and beautiful beaches.",
-    "travel": ["By Air - Cochin International Airport", "By Train - Ernakulam Junction", "By Road - National Highway 66"],
-    "popular_food": ["Appam & Stew", "Puttu and Kadala Curry", "Fish Moilee"],
-    "attractions": ["Alleppey Backwaters", "Munnar Hills", "Fort Kochi"]
+<!-- your HTML above -->
+
+<script>
+// ✅ Add this full code block
+const travelData = {
+  jaipur: {
+    attractions: [
+      "Amber Fort",
+      "City Palace",
+      "Hawa Mahal",
+      "Nahargarh Fort",
+      "Jantar Mantar"
+    ],
+    food: [
+      "Dal Baati Churma",
+      "Ghevar",
+      "Pyaaz Kachori",
+      "Rajasthani Thali"
+    ],
+    transport: {
+      car: "Jaipur is well-connected by road and car rentals are available.",
+      train: "Jaipur Junction connects to major cities like Delhi and Mumbai.",
+      flight: "Jaipur International Airport serves domestic and international flights."
+    }
   },
-  "ooty": {
-    "name": "Ooty",
-    "description": "Ooty, also known as Udhagamandalam, is a hill station in Tamil Nadu famous for its tea gardens and cool climate.",
-    "travel": ["By Air - Coimbatore Airport", "By Train - Mettupalayam Station", "By Road - NH181 from Coimbatore"],
-    "popular_food": ["Ooty Chocolates", "Varkey Biscuit", "Hot Tea"],
-    "attractions": ["Ooty Lake", "Botanical Garden", "Doddabetta Peak"]
+  goa: {
+    attractions: [
+      "Baga Beach",
+      "Fort Aguada",
+      "Basilica of Bom Jesus",
+      "Dudhsagar Waterfalls"
+    ],
+    food: [
+      "Fish Curry Rice",
+      "Prawn Balchao",
+      "Bebinca"
+    ],
+    transport: {
+      car: "Self-drive cars and taxis are available across Goa.",
+      train: "Madgaon and Vasco da Gama are main railway stations.",
+      flight: "Dabolim Airport connects Goa to other major cities."
+    }
   },
-  "goa": {
-    "name": "Goa",
-    "description": "Goa is India's party capital, known for its beaches, churches, and seafood.",
-    "travel": ["By Air - Dabolim Airport", "By Train - Madgaon Station", "By Road - NH66"],
-    "popular_food": ["Fish Curry Rice", "Prawn Balchão", "Bebinca"],
-    "attractions": ["Baga Beach", "Basilica of Bom Jesus", "Dudhsagar Waterfalls"]
-  },
-  "jaipur": {
-    "name": "Jaipur",
-    "description": "The Pink City of India, famous for its royal palaces and forts.",
-    "travel": ["By Air - Jaipur International Airport", "By Train - Jaipur Junction", "By Road - NH48"],
-    "popular_food": ["Dal Baati Churma", "Ghewar", "Pyaaz Kachori"],
-    "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"]
+  // Add more cities here
+};
+
+function showDetails() {
+  const place = document.getElementById("placeInput").value.toLowerCase();
+  const travelWay = document.getElementById("travelWay").value;
+  const outputDiv = document.getElementById("output");
+
+  if (travelData[place]) {
+    const data = travelData[place];
+    outputDiv.innerHTML = `
+      <h2>${place.toUpperCase()}</h2>
+      <h3>Popular Attractions:</h3>
+      <ul>${data.attractions.map(a => `<li>${a}</li>`).join("")}</ul>
+      <h3>Famous Food:</h3>
+      <ul>${data.food.map(f => `<li>${f}</li>`).join("")}</ul>
+      <h3>How to Reach by ${travelWay}:</h3>
+      <p>${data.transport[travelWay]}</p>
+    `;
+  } else {
+    outputDiv.innerHTML = `<p>Sorry! No data found for "${place}"</p>`;
   }
 }
+</script>
+</body>
+</html>
+
