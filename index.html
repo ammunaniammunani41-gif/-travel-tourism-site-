@@ -3,141 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Royal India Tours</title>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f7f6f2;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #111;
-      color: gold;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-top: 15px;
-    }
-
-    input, select, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: gold;
-      color: black;
-      font-weight: 600;
-      border: none;
-      margin-top: 20px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #222;
-      color: gold;
-    }
-
-    #output {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #fffbea;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-    }
-
-    h2 {
-      color: #b8860b;
-    }
-
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
-    }
-  </style>
+  <title>Explore India - Tourism Finder</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>Royal India Tours</header>
-
   <div class="container">
-    <label for="placeInput">🗺️ Which place do you want to go?</label>
-    <input type="text" id="placeInput" placeholder="Enter place name (e.g., Jaipur, Goa, Kerala)">
+    <h1>Explore Incredible India 🌏</h1>
+    <p>Discover tourist places, famous foods & travel options!</p>
 
-    <label for="travelWay">🚗 What are the ways to travel?</label>
-    <select id="travelWay">
-      <option value="car">Car 🚗</option>
-      <option value="train">Train 🚆</option>
-      <option value="flight">Flight ✈️</option>
-    </select>
+    <form id="travelForm">
+      <label for="place">Which place do you want to go?</label>
+      <input type="text" id="place" placeholder="Type any place (e.g. Goa, Jaipur, Delhi)" required>
 
-    <button onclick="showDetails()">Show Details</button>
+      <label for="way">What are the ways to travel?</label>
+      <input type="text" id="way" placeholder="Car, Train, Flight, etc." required>
 
-    <div id="output"></div>
+      <button type="submit">Explore</button>
+    </form>
+
+    <div id="result"></div>
   </div>
 
   <script>
-    async function showDetails() {
-      const place = document.getElementById("placeInput").value.toLowerCase().trim();
-      const travelWay = document.getElementById("travelWay").value;
-      const outputDiv = document.getElementById("output");
+    document.getElementById("travelForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
 
-      if (!place) {
-        outputDiv.innerHTML = "<p>Please enter a place name.</p>";
-        return;
-      }
+      const placeInput = document.getElementById("place").value.trim().toLowerCase();
+      const wayInput = document.getElementById("way").value.trim().toLowerCase();
+      const resultDiv = document.getElementById("result");
 
       try {
-        const response = await fetch("places.json");
+        const response = await fetch("places.json?v=" + new Date().getTime());
         const data = await response.json();
 
-        if (data[place]) {
-          const info = data[place];
-          outputDiv.innerHTML = `
-            <h2>${place.toUpperCase()}</h2>
-            <h3>🌄 Popular Attractions:</h3>
-            <ul>${info.attractions.map(a => `<li>${a}</li>`).join("")}</ul>
-            <h3>🍴 Famous Food:</h3>
-            <ul>${info.food.map(f => `<li>${f}</li>`).join("")}</ul>
-            <h3>🚉 How to Reach by ${travelWay}:</h3>
-            <p>${info.transport[travelWay]}</p>
-          `;
+        const matches = Object.keys(data).filter(key => key.toLowerCase().includes(placeInput));
+
+        if (matches.length > 0) {
+          let output = "";
+          matches.forEach(match => {
+            const info = data[match];
+            const travelInfo = info.transport[wayInput] || "No details available for this travel mode.";
+            output += `
+              <div class="place-card">
+                <h2>${match.charAt(0).toUpperCase() + match.slice(1)}</h2>
+                <p><strong>Popular Attractions:</strong> ${info.attractions.join(", ")}</p>
+                <p><strong>Famous Foods:</strong> ${info.food.join(", ")}</p>
+                <p><strong>Way to Travel (${wayInput}):</strong> ${travelInfo}</p>
+              </div>
+            `;
+          });
+          resultDiv.innerHTML = output;
         } else {
-          outputDiv.innerHTML = `<p>❌ Sorry! No data found for "<strong>${place}</strong>".</p>`;
+          resultDiv.innerHTML = `<p style="color:red;">No tourist data found for "${placeInput}".</p>`;
         }
       } catch (error) {
-        console.error("Error loading data:", error);
-        outputDiv.innerHTML = `<p>⚠️ Error loading data. Please check your connection or file path.</p>`;
+        console.error(error);
+        resultDiv.innerHTML = `<p style="color:red;">Error loading data. Try again later.</p>`;
       }
-    }
+    });
   </script>
 </body>
 </html>
-
-
-
-
-
-
