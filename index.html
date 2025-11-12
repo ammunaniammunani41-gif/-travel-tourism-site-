@@ -1,72 +1,82 @@
-<!-- your HTML above -->
-
-<script>
-// ✅ Add this full code block
-const travelData = {
-  jaipur: {
-    attractions: [
+{
+  "kerala": {
+    "attractions": [
+      "Munnar",
+      "Alleppey Backwaters",
+      "Kovalam Beach",
+      "Thekkady Wildlife Sanctuary"
+    ],
+    "food": [
+      "Appam with Stew",
+      "Puttu and Kadala Curry",
+      "Kerala Sadya"
+    ],
+    "transport": {
+      "car": "Kerala has a good road network connecting major cities like Kochi, Munnar, and Alleppey.",
+      "train": "Kerala is well connected by train through stations like Ernakulam and Trivandrum.",
+      "flight": "Cochin International Airport and Trivandrum International Airport serve Kerala."
+    }
+  },
+  "goa": {
+    "attractions": [
+      "Baga Beach",
+      "Fort Aguada",
+      "Basilica of Bom Jesus",
+      "Dudhsagar Waterfalls"
+    ],
+    "food": [
+      "Fish Curry Rice",
+      "Prawn Balchao",
+      "Bebinca"
+    ],
+    "transport": {
+      "car": "Self-drive cars and taxis are available across Goa.",
+      "train": "Madgaon and Vasco da Gama are main railway stations.",
+      "flight": "Dabolim Airport connects Goa to other major cities."
+    }
+  },
+  "jaipur": {
+    "attractions": [
       "Amber Fort",
       "City Palace",
       "Hawa Mahal",
       "Nahargarh Fort",
       "Jantar Mantar"
     ],
-    food: [
+    "food": [
       "Dal Baati Churma",
       "Ghevar",
       "Pyaaz Kachori",
       "Rajasthani Thali"
     ],
-    transport: {
-      car: "Jaipur is well-connected by road and car rentals are available.",
-      train: "Jaipur Junction connects to major cities like Delhi and Mumbai.",
-      flight: "Jaipur International Airport serves domestic and international flights."
+    "transport": {
+      "car": "Jaipur is well-connected by road and car rentals are available.",
+      "train": "Jaipur Junction connects to major cities like Delhi and Mumbai.",
+      "flight": "Jaipur International Airport serves domestic and international flights."
     }
   },
-  goa: {
-    attractions: [
-      "Baga Beach",
-      "Fort Aguada",
-      "Basilica of Bom Jesus",
-      "Dudhsagar Waterfalls"
+  "delhi": {
+    "attractions": [
+      "India Gate",
+      "Red Fort",
+      "Qutub Minar",
+      "Lotus Temple",
+      "Akshardham Temple"
     ],
-    food: [
-      "Fish Curry Rice",
-      "Prawn Balchao",
-      "Bebinca"
+    "food": [
+      "Chole Bhature",
+      "Paratha",
+      "Butter Chicken",
+      "Gol Gappa"
     ],
-    transport: {
-      car: "Self-drive cars and taxis are available across Goa.",
-      train: "Madgaon and Vasco da Gama are main railway stations.",
-      flight: "Dabolim Airport connects Goa to other major cities."
+    "transport": {
+      "car": "Delhi has a wide road network and app-based cabs available.",
+      "train": "New Delhi and Nizamuddin stations connect across India.",
+      "flight": "Indira Gandhi International Airport is the main airport."
     }
-  },
-  // Add more cities here
-};
-
-function showDetails() {
-  const place = document.getElementById("placeInput").value.toLowerCase();
-  const travelWay = document.getElementById("travelWay").value;
-  const outputDiv = document.getElementById("output");
-
-  if (travelData[place]) {
-    const data = travelData[place];
-    outputDiv.innerHTML = `
-      <h2>${place.toUpperCase()}</h2>
-      <h3>Popular Attractions:</h3>
-      <ul>${data.attractions.map(a => `<li>${a}</li>`).join("")}</ul>
-      <h3>Famous Food:</h3>
-      <ul>${data.food.map(f => `<li>${f}</li>`).join("")}</ul>
-      <h3>How to Reach by ${travelWay}:</h3>
-      <p>${data.transport[travelWay]}</p>
-    `;
-  } else {
-    outputDiv.innerHTML = `<p>Sorry! No data found for "${place}"</p>`;
   }
 }
-</script>
-</body>
-</html>
+
 
 
 
