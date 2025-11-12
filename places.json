@@ -1,0 +1,30 @@
+{
+  "kerala": {
+    "name": "Kerala",
+    "description": "Known as 'God’s Own Country', Kerala is famous for its backwaters, houseboats, and beautiful beaches.",
+    "travel": ["By Air - Cochin International Airport", "By Train - Ernakulam Junction", "By Road - National Highway 66"],
+    "popular_food": ["Appam & Stew", "Puttu and Kadala Curry", "Fish Moilee"],
+    "attractions": ["Alleppey Backwaters", "Munnar Hills", "Fort Kochi"]
+  },
+  "ooty": {
+    "name": "Ooty",
+    "description": "Ooty, also known as Udhagamandalam, is a hill station in Tamil Nadu famous for its tea gardens and cool climate.",
+    "travel": ["By Air - Coimbatore Airport", "By Train - Mettupalayam Station", "By Road - NH181 from Coimbatore"],
+    "popular_food": ["Ooty Chocolates", "Varkey Biscuit", "Hot Tea"],
+    "attractions": ["Ooty Lake", "Botanical Garden", "Doddabetta Peak"]
+  },
+  "goa": {
+    "name": "Goa",
+    "description": "Goa is India's party capital, known for its beaches, churches, and seafood.",
+    "travel": ["By Air - Dabolim Airport", "By Train - Madgaon Station", "By Road - NH66"],
+    "popular_food": ["Fish Curry Rice", "Prawn Balchão", "Bebinca"],
+    "attractions": ["Baga Beach", "Basilica of Bom Jesus", "Dudhsagar Waterfalls"]
+  },
+  "jaipur": {
+    "name": "Jaipur",
+    "description": "The Pink City of India, famous for its royal palaces and forts.",
+    "travel": ["By Air - Jaipur International Airport", "By Train - Jaipur Junction", "By Road - NH48"],
+    "popular_food": ["Dal Baati Churma", "Ghewar", "Pyaaz Kachori"],
+    "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"]
+  }
+}
