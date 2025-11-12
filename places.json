@@ -89,4 +89,14 @@
       "flight": "Nearest airport is Bagdogra."
     }
   }
+},
+"hyderabad": {
+  "attractions": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake"],
+  "food": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha"],
+  "transport": {
+    "car": "Hyderabad has well-developed roads and taxi services.",
+    "train": "Connected via Secunderabad and Hyderabad Deccan stations.",
+    "flight": "Rajiv Gandhi International Airport connects major cities globally."
+  }
 }
+
