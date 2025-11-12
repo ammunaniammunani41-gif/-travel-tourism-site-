@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Travel & Tourism</title>
+    <title>Interactive Travel & Tourism</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
@@ -25,123 +25,35 @@
             top: 0;
             z-index: 10;
         }
-        nav a {
-            color: #d6c27a;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
+        nav a { color: #d6c27a; margin-left: 20px; text-decoration: none; font-weight: 500; font-size: 1.1rem; }
         nav a:hover { color: #fff; }
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #d6c27a;
-            font-weight: 900;
-        }
+        .logo { font-family: 'Playfair Display', serif; font-size: 2rem; color: #d6c27a; font-weight: 900; }
 
-        .separator {
-            text-align: center;
-            font-size: 2rem;
-            margin: 40px 0;
-            color: #d6c27a;
-        }
+        h2 { text-align: center; margin-top: 50px; font-family: 'Playfair Display', serif; color: #d6c27a; font-size: 2.5rem; }
+        .section-box { max-width: 950px; margin: auto; padding: 25px; font-size: 20px; }
+        .section-box img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
 
-        h2 {
-            text-align: center;
-            margin-top: 50px;
-            font-family: 'Playfair Display', serif;
-            color: #d6c27a;
-            font-size: 2.8rem;
-        }
+        /* Interactive Input */
+        #userInput { background: #fff; padding: 30px; margin: 25px auto; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); max-width: 700px; }
+        #userInput input, #userInput select { width: 100%; padding: 15px; margin: 10px 0; font-size: 18px; border-radius: 6px; border: 1px solid #ccc; }
+        #userInput button { padding: 15px 25px; background: #d6c27a; border: none; border-radius: 6px; font-size: 18px; cursor: pointer; }
+        #userInput button:hover { background: #bfa65a; }
 
-        .gallery, .packages { display: flex; gap: 15px; padding: 25px; justify-content: center; flex-wrap: wrap; }
-        .gallery img, .card img { border-radius: 8px; }
-        .gallery img { width: 400px; height: 280px; object-fit: cover; }
-        .packages { padding: 35px; }
-        .card {
-            width: 300px;
-            padding: 25px;
-            border-radius: 10px;
-            background: #fff;
-            box-shadow: 0 0 12px rgba(0,0,0,0.2);
-            text-align: center;
-            transition: 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .section-box {
-            max-width: 950px;
-            margin: auto;
-            padding: 25px;
-            font-size: 20px;
-        }
-        .section-box img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 25px;
-        }
-        .section-box ul li { margin-bottom: 12px; }
-        #food { background: #fff8e1; padding: 50px 0; }
-        #problems { background: #f0f0f0; padding: 50px 0; }
-        #map { background: #e8f5e9; padding: 50px 0; }
-        .contact-form {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 35px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 18px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 18px;
-        }
-        .contact-form button {
-            padding: 15px 25px;
-            background: #d6c27a;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .contact-form button:hover { background: #bfa65a; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 18px;
-        }
+        /* Packages */
+        .packages { display: flex; justify-content: center; gap: 20px; padding: 30px; flex-wrap: wrap; }
+        .card { width: 300px; padding: 25px; border-radius: 10px; background: #fff; box-shadow: 0 0 12px rgba(0,0,0,0.2); text-align: center; transition: 0.3s ease-in-out; }
+        .card:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(0,0,0,0.3); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+
+        /* Table for problems & solutions */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 18px; }
         table, th, td { border: 1px solid #ccc; }
         th, td { padding: 12px; text-align: left; }
         th { background: #d6c27a; color: #111; }
-        footer {
-            background: #111;
-            color: #d6c27a;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-        footer a {
-            color: #d6c27a;
-            margin: 0 12px;
-            text-decoration: none;
-            font-size: 1.3rem;
-        }
+
+        /* Footer */
+        footer { background: #111; color: #d6c27a; text-align: center; padding: 25px; margin-top: 50px; }
+        footer a { color: #d6c27a; margin: 0 12px; text-decoration: none; font-size: 1.3rem; }
         footer a:hover { color: #fff; }
     </style>
 </head>
@@ -151,118 +63,58 @@
     <nav>
         <div class="logo">Royal India Tours</div>
         <div>
-            <a href="#gallery">Gallery</a>
+            <a href="#userInput">Plan Trip</a>
             <a href="#packages">Packages</a>
-            <a href="#kerala">Kerala</a>
-            <a href="#ooty">Ooty Lake</a>
-            <a href="#map">Map</a>
             <a href="#food">Food & Experiences</a>
             <a href="#problems">Problems</a>
-            <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <div class="separator">✈️ ✨ 🌴</div>
-
-    <!-- GALLERY -->
-    <h2 id="gallery"><i class="fas fa-camera"></i> Destination Gallery</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Goa Beach">
-        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Manali Hills">
-        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Jaipur Palace">
+    <!-- USER INPUT -->
+    <div id="userInput" class="section-box">
+        <h2>Plan Your Trip 🌏</h2>
+        <input type="text" id="placeInput" placeholder="Enter the place you want to visit">
+        <select id="travelMethod">
+            <option value="">Select travel method</option>
+            <option value="flight">Flight ✈️</option>
+            <option value="train">Train 🚆</option>
+            <option value="car">Car 🚗</option>
+            <option value="bus">Bus 🚌</option>
+        </select>
+        <button onclick="showTripDetails()">Show Details</button>
     </div>
 
-    <!-- PACKAGES -->
-    <h2 id="packages"><i class="fas fa-suitcase-rolling"></i> Luxury Travel Packages</h2>
+    <!-- DYNAMIC DETAILS -->
+    <div id="tripDetails" class="section-box" style="display:none;"></div>
+
+    <!-- PACKAGES (default) -->
+    <h2 id="packages"><i class="fas fa-suitcase-rolling"></i> Travel Packages</h2>
     <div class="packages">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa Beach Trip">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa">
             <h3>Goa Beach Trip</h3>
-            <p>3 Days / 2 Nights – ₹18,000/-</p>
+            <p>3 Days / 2 Nights – ₹20,000/-</p>
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Manali Premium Hills">
-            <h3>Manali Premium Hills</h3>
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Manali">
+            <h3>Manali Hills</h3>
             <p>5 Days / 4 Nights – ₹32,000/-</p>
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Jaipur Heritage Luxury">
-            <h3>Jaipur Heritage Luxury</h3>
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Jaipur">
+            <h3>Jaipur Heritage</h3>
             <p>2 Days / 1 Night – ₹12,000/-</p>
         </div>
     </div>
 
-    <!-- EXPLORE KERALA -->
-    <h2 id="kerala"><i class="fas fa-water"></i> Explore Kerala</h2>
-    <div class="section-box">
-        <img src="https://images.unsplash.com/photo-1529122314214-45a512f5a1d7?auto=format&fit=crop&w=1200&q=80" alt="Kerala Kochi">
-        <p>
-            Kerala, "God's Own Country", is famous for backwaters, beaches, and hill stations.
-            <strong>Kochi</strong> is a vibrant coastal city blending culture, history, and modern attractions.
-        </p>
-        <h3>Kochi Highlights</h3>
-        <ul>
-            <li>Fort Kochi Heritage Streets</li>
-            <li>Chinese Fishing Nets</li>
-            <li>Marine Drive Walk</li>
-            <li>Mattancherry & Jew Town</li>
-            <li>Lulu Mall Shopping</li>
-        </ul>
-    </div>
-
-    <!-- OOTY LAKE -->
-    <h2 id="ooty"><i class="fas fa-mountain"></i> Ooty Lake</h2>
-    <div class="section-box">
-        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1200&q=80" alt="Ooty Lake">
-        <p>
-            Ooty Lake is the heart of Ooty, surrounded by misty hills and eucalyptus trees.
-            Visitors enjoy boating, cycling, and photography.
-        </p>
-        <h3>Things to Do</h3>
-        <ul>
-            <li>Pedal, row & motor boat rides</li>
-            <li>Lakeside cycling</li>
-            <li>Photography with mountain views</li>
-            <li>Mini amusement rides for kids</li>
-        </ul>
-    </div>
-
-    <!-- MAP SECTION -->
-    <h2 id="map"><i class="fas fa-map-marker-alt"></i> Explore on Map</h2>
-    <div class="section-box">
-        <p>Locate the beautiful destinations of Kerala and Ooty on the map. Plan your trip routes easily!</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12699269.04669376!2d74.03535906423004!3d11.388485124958004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c0131f1f0e55%3A0x77f73b9884f9059a!2sKerala%2C%20India!5e0!3m2!1sen!2sin!4v1699632342345!5m2!1sen!2sin" 
-            width="100%" 
-            height="500" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div>
-
-    <!-- POPULAR FOOD & EXPERIENCES -->
+    <!-- FOOD & EXPERIENCES -->
     <h2 id="food"><i class="fas fa-utensils"></i> Popular Food & Experiences</h2>
     <div class="section-box">
-        <img src="https://images.unsplash.com/photo-1604908177522-0d9aa6a0f6c4?auto=format&fit=crop&w=1200&q=80" alt="Kerala Cuisine">
-        <p>
-            Kerala and Ooty offer a rich variety of culinary delights and unique experiences that travelers love.
-        </p>
-        <h3>Must‑Try Foods</h3>
         <ul>
-            <li><strong>Kerala Parotta & Beef Curry</strong></li>
-            <li><strong>Appam with Stew</strong></li>
-            <li><strong>Meen Pollichathu</strong></li>
-            <li><strong>Seafood Fry</strong></li>
-        </ul>
-        <h3>Experiences to Try</h3>
-        <ul>
-            <li>Houseboat rides in Alleppey backwaters</li>
-            <li>Tea plantation tours in Ooty</li>
-            <li>Evening walks at Marine Drive, Kochi</li>
-            <li>Exploring local markets in Fort Kochi & Jew Town</li>
-            <li>Attend traditional Kathakali performances</li>
+            <li>Kerala: Appam, Parotta, Fish Curry, Backwater houseboat</li>
+            <li>Ooty: Ooty Chocolate, Tea, Boating, Cycling</li>
+            <li>Goa: Seafood, Bebinca, Beach party, Water sports</li>
         </ul>
     </div>
 
@@ -303,17 +155,9 @@
         </table>
     </div>
 
-    <!-- ABOUT US -->
-    <h2 id="about"><i class="fas fa-users"></i> About Us</h2>
-    <div class="section-box">
-        <p>
-            Royal India Tours is a project‑based tourism website designed for students to explore India’s top destinations including Kerala, Ooty, Goa, Manali, and Jaipur. The site provides travel tips, sightseeing guides, and curated packages for hassle‑free trips.
-        </p>
-    </div>
-
     <!-- CONTACT FORM -->
     <h2 id="contact"><i class="fas fa-envelope"></i> Contact Us</h2>
-    <div class="contact-form">
+    <div class="section-box">
         <input type="text" placeholder="Your Name">
         <input type="email" placeholder="Your Email">
         <textarea placeholder="Your Message" rows="5"></textarea>
@@ -322,13 +166,63 @@
 
     <!-- FOOTER -->
     <footer>
-        © 2025 Royal India Tours | 
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
-        <a href="#"><i class="fab fa-youtube"></i> YouTube</a> | 
+        © 2025 Royal India Tours |
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a> |
         <a href="#"><i class="fas fa-envelope"></i> Email</a>
     </footer>
 
+    <!-- JAVASCRIPT FOR DYNAMIC INPUT -->
+    <script>
+    const placeData = {
+        kerala: {
+            images: ["https://images.unsplash.com/photo-1529122314214-45a512f5a1d7?auto=format&fit=crop&w=1200&q=80"],
+            food: ["Appam", "Kerala Parotta", "Fish Curry"],
+            experiences: ["Backwater houseboat", "Tea plantation tours", "Fort Kochi walk"],
+            packages: ["3 Days / 2 Nights – ₹18,000/-", "5 Days / 4 Nights – ₹32,000/-"]
+        },
+        ooty: {
+            images: ["https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1200&q=80"],
+            food: ["Ooty Chocolate", "Tea", "Local Snacks"],
+            experiences: ["Boating", "Cycling around the lake", "Photography with mountain views"],
+            packages: ["2 Days / 1 Night – ₹12,000/-"]
+        },
+        goa: {
+            images: ["https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"],
+            food: ["Seafood Curry", "Goan Bebinca", "Feni"],
+            experiences: ["Beach party", "Water sports", "Sunset cruise"],
+            packages: ["3 Days / 2 Nights – ₹20,000/-"]
+        }
+    };
+
+    function showTripDetails() {
+        const place = document.getElementById("placeInput").value.toLowerCase();
+        const travel = document.getElementById("travelMethod").value;
+        const container = document.getElementById("tripDetails");
+        
+        if(!place || !travel){
+            alert("Please enter a place and select a travel method.");
+            return;
+        }
+
+        if(placeData[place]){
+            const data = placeData[place];
+            let html = `<h2>${place.charAt(0).toUpperCase() + place.slice(1)} ✈️</h2>`;
+            html += `<p>Recommended Travel: ${travel}</p>`;
+            html += `<h3>Food</h3><ul>${data.food.map(f => `<li>${f}</li>`).join('')}</ul>`;
+            html += `<h3>Experiences</h3><ul>${data.experiences.map(e => `<li>${e}</li>`).join('')}</ul>`;
+            html += `<h3>Packages</h3><ul>${data.packages.map(p => `<li>${p}</li>`).join('')}</ul>`;
+            html += `<h3>Images</h3>${data.images.map(i => `<img src="${i}" alt="${place}" style="width:100%;max-height:400px;margin-bottom:15px;border-radius:8px;">`).join('')}`;
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = `<h3>Sorry! No data found for "${place}"</h3>`;
+        }
+        
+        container.style.display = "block";
+    }
+    </script>
 </body>
 </html>
+
 
 
