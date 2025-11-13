@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore India - Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Explore India</h1>
+    <p>Let's plan your next trip!</p>
 
+    <div id="question-box">
+      <label for="place">🌏 Which place would you like to visit?</label>
+      <input type="text" id="place" placeholder="e.g., Goa, Ooty, Kerala">
+
+      <label for="transport">🚗 How would you like to travel?</label>
+      <select id="transport">
+        <option value="">-- Select a way --</option>
+        <option value="flight">Flight ✈️</option>
+        <option value="train">Train 🚆</option>
+        <option value="bus">Bus 🚌</option>
+        <option value="car">Car 🚗</option>
+      </select>
+
+      <button id="submit">Find Details</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
