@@ -1,42 +1,36 @@
-document.getElementById("searchBtn").addEventListener("click", async () => {
-  const placeName = document.getElementById("place").value.toLowerCase();
-  const transport = document.getElementById("transport").value;
-  const resultDiv = document.getElementById("result");
+document.getElementById("searchBtn").addEventListener("click", searchPlace);
 
-  if (!placeName || !transport) {
-    resultDiv.innerHTML = "<p>Please enter both fields.</p>";
-    return;
-  }
+async function searchPlace() {
+  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "<p>Loading...</p>";
 
   try {
     const response = await fetch("places.json");
     const data = await response.json();
+    const places = data.places;
 
-    const place = data.find(p => p.name.toLowerCase() === placeName);
-    if (!place) {
-      resultDiv.innerHTML = `<p>❌ Sorry, we don't have details for ${placeName} yet.</p>`;
+    const match = places.find(p => p.name.toLowerCase() === query);
+
+    if (!match) {
+      resultDiv.innerHTML = `<p>No matching place found. Try another name!</p>`;
       return;
     }
 
+    let imagesHTML = match.images.map(img => `<img src="${img}" alt="${match.name}">`).join("");
+
     resultDiv.innerHTML = `
-      <div class="place-info">
-        <h2>${place.name}</h2>
-        <p>${place.description}</p>
-        <p><b>Popular Foods:</b> ${place.food.join(", ")}</p>
-        <p><b>Travel by ${transport}:</b> ${place.travel[transport]}</p>
-
-        <div class="images">
-          ${place.images.map(img => `<img src="${img}" alt="${place.name}">`).join("")}
-        </div>
-
-        <iframe 
-          src="${place.map}" 
-          allowfullscreen 
-          loading="lazy">
-        </iframe>
+      <div class="place-card">
+        <h2>${match.name}</h2>
+        <p>${match.description}</p>
+        <p><b>Popular Foods:</b> ${match.foods.join(", ")}</p>
+        <p><b>Travel by:</b> ${match.travel}</p>
+        <div class="images">${imagesHTML}</div>
+        <iframe src="${match.map}" loading="lazy"></iframe>
       </div>
     `;
   } catch (error) {
-    resultDiv.innerHTML = "<p>⚠️ Error loading data.</p>";
+    resultDiv.innerHTML = "<p>Error loading data. Check console.</p>";
+    console.error(error);
   }
-});
+}
