@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore India - Travel Planner</title>
+  <meta name="viewport" content="width=device-scale=1.0">
+  <title>Explore India - Travel Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Explore India</h1>
-    <p>Let's plan your next trip!</p>
+  <header>
+    <h1>Explore Incredible India</h1>
+    <p>Discover top tourist spots, hill stations, and travel routes</p>
+  </header>
 
-    <div id="question-box">
-      <label for="place">🌏 Which place would you like to visit?</label>
-      <input type="text" id="place" placeholder="e.g., Goa, Ooty, Kerala">
-
+  <main>
+    <section id="search-section">
+      <label for="place">🏞️ Which place would you like to visit?</label>
+      <input type="text" id="place" placeholder="e.g., Goa, Manali, Ooty">
+      
       <label for="transport">🚗 How would you like to travel?</label>
       <select id="transport">
-        <option value="">-- Select a way --</option>
+        <option value="">-- Select --</option>
         <option value="flight">Flight ✈️</option>
         <option value="train">Train 🚆</option>
         <option value="bus">Bus 🚌</option>
         <option value="car">Car 🚗</option>
       </select>
 
-      <button id="submit">Find Details</button>
-    </div>
+      <button id="searchBtn">Search</button>
+    </section>
 
-    <div id="result"></div>
-  </div>
+    <section id="result"></section>
+  </main>
+
+  <footer>
+    <p>© 2025 Explore India | Designed by Ammunani</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
