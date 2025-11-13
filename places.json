@@ -1,3 +1,65 @@
+[
+  {
+    "name": "Goa",
+    "description": "Famous for beaches, churches, nightlife, and seafood.",
+    "food": ["Goan Fish Curry", "Bebinca", "Prawn Balchão"],
+    "image": "images/goa.jpg",
+    "travel": {
+      "flight": "Dabolim Airport connects major Indian cities.",
+      "train": "Madgaon and Vasco-da-Gama stations are the main railway hubs.",
+      "bus": "KSRTC and private buses from Mumbai, Pune, and Bangalore.",
+      "car": "Approx. 10 hours drive from Mumbai via NH66."
+    }
+  },
+  {
+    "name": "Ooty",
+    "description": "Known for tea gardens, lakes, and misty hills of the Nilgiris.",
+    "food": ["Ooty Varkey", "Homemade Chocolates", "South Indian Meals"],
+    "image": "images/ooty.jpg",
+    "travel": {
+      "flight": "Nearest airport: Coimbatore (88 km away).",
+      "train": "Mettupalayam station (toy train to Ooty).",
+      "bus": "Frequent buses from Bangalore, Coimbatore, and Mysore.",
+      "car": "Picturesque 6-hour drive from Bangalore."
+    }
+  },
+  {
+    "name": "Kerala",
+    "description": "Backwaters, Ayurveda, beaches, and green hills — truly God's Own Country.",
+    "food": ["Appam with Stew", "Puttu Kadala", "Kerala Sadya"],
+    "image": "images/kerala.jpg",
+    "travel": {
+      "flight": "Airports in Kochi, Trivandrum, and Calicut.",
+      "train": "Excellent rail network across the state.",
+      "bus": "KSRTC and private buses connect all districts.",
+      "car": "Beautiful coastal drives via NH66."
+    }
+  },
+  {
+    "name": "Jaipur",
+    "description": "The Pink City of India — rich in heritage, forts, and culture.",
+    "food": ["Dal Baati Churma", "Ghevar", "Ker Sangri"],
+    "image": "images/jaipur.jpg",
+    "travel": {
+      "flight": "Jaipur International Airport connects to Delhi and Mumbai.",
+      "train": "Jaipur Junction connects to all major Indian cities.",
+      "bus": "Comfortable AC buses from Delhi and Agra.",
+      "car": "4-5 hrs drive from Delhi via NH48."
+    }
+  },
+  {
+    "name": "Manali",
+    "description": "A scenic hill station in Himachal Pradesh, famous for snow and adventure.",
+    "food": ["Sidu", "Trout Fish", "Dham"],
+    "image": "images/manali.jpg",
+    "travel": {
+      "flight": "Nearest airport: Bhuntar (50 km away).",
+      "train": "Joginder Nagar is the closest railway station.",
+      "bus": "HRTC and private Volvo buses from Delhi & Chandigarh.",
+      "car": "12-hour drive from Delhi with beautiful mountain views."
+    }
+  }
+]
 
 
 
