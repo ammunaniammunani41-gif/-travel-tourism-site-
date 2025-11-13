@@ -1,67 +1,82 @@
-[
-  {
-    "name": "Goa",
-    "description": "A coastal paradise famous for beaches, nightlife, and seafood.",
-    "food": ["Goan Fish Curry", "Bebinca", "Prawn Balchão"],
-    "images": ["images/goa1.jpg", "images/goa2.jpg", "images/goa3.jpg", "images/goa4.jpg"],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60511.40194493501!2d73.752062!3d15.491997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc086e8a676a7%3A0x8c604b1d4aefea77!2sGoa!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-    "travel": {
-      "flight": "Dabolim Airport connects all major cities.",
-      "train": "Madgaon and Vasco-da-Gama are main railway stations.",
-      "bus": "Regular buses from Mumbai, Pune, and Bangalore.",
-      "car": "Scenic 10-hour drive from Mumbai."
+{
+  "places": [
+    {
+      "name": "Ooty",
+      "description": "Ooty is a serene hill station in Tamil Nadu known for tea gardens and misty mountains.",
+      "foods": ["Varki", "Ooty Chocolate", "South Indian Thali"],
+      "images": [
+        "images/ooty1.jpg",
+        "images/ooty2.jpg",
+        "images/ooty3.jpg",
+        "images/ooty4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.010998985252!2d76.69441767479578!3d11.410205848628063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba89b2d08f3e4cf%3A0x83e6a56a304e9da4!2sOoty%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (nearest Coimbatore 85 km), by train (toy train from Mettupalayam), by bus or car via Nilgiri Hills."
+    },
+    {
+      "name": "Munnar",
+      "description": "Munnar, located in Kerala, is known for its lush tea gardens, waterfalls, and cool climate.",
+      "foods": ["Idiyappam", "Malabar Parotta", "Kerala Sadya"],
+      "images": [
+        "images/munnar1.jpg",
+        "images/munnar2.jpg",
+        "images/munnar3.jpg",
+        "images/munnar4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.410623908729!2d77.05952507474454!3d10.088933471825202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b078a257962e027%3A0xadc02cf0da5e3a8!2sMunnar%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (nearest Kochi 110 km), by train (Aluva), by bus from Kochi or by car via Western Ghats."
+    },
+    {
+      "name": "Manali",
+      "description": "Manali is a picturesque hill station in Himachal Pradesh surrounded by snow-capped mountains.",
+      "foods": ["Siddu", "Trout Fish", "Madra"],
+      "images": [
+        "images/manali1.jpg",
+        "images/manali2.jpg",
+        "images/manali3.jpg",
+        "images/manali4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.9014732425363!2d77.18369567464064!3d32.23963208113311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390487a80241b0fb%3A0x7e1b788cce86c3b0!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (Bhuntar 50 km), by train (Joginder Nagar), by bus from Delhi or by car through Kullu Valley."
+    },
+    {
+      "name": "Shimla",
+      "description": "Shimla, the capital of Himachal Pradesh, is famous for colonial architecture and Himalayan views.",
+      "foods": ["Chana Madra", "Babru", "Siddu"],
+      "images": [
+        "images/shimla1.jpg",
+        "images/shimla2.jpg",
+        "images/shimla3.jpg",
+        "images/shimla4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.947531944902!2d77.15594597464405!3d31.10481498149936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905788fd67b5e6d%3A0x8c4d9d706c52fd7!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (Jubbarhatti 22 km), by train (Kalka-Shimla toy train), by bus or car from Chandigarh."
+    },
+    {
+      "name": "Darjeeling",
+      "description": "Darjeeling, in West Bengal, is known for its tea estates, Toy Train, and the stunning view of Kanchenjunga.",
+      "foods": ["Momos", "Thukpa", "Darjeeling Tea"],
+      "images": [
+        "images/darjeeling1.jpg",
+        "images/darjeeling2.jpg",
+        "images/darjeeling3.jpg",
+        "images/darjeeling4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57834.91817958438!2d88.24199507921682!3d27.036007678758932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e420c3a9fcb719%3A0x77a9bb423d680c13!2sDarjeeling%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (Bagdogra 70 km), by train (New Jalpaiguri), by car or shared jeep via Siliguri."
+    },
+    {
+      "name": "Kerala",
+      "description": "Kerala, known as God's Own Country, is famous for its backwaters, beaches, and greenery.",
+      "foods": ["Puttu and Kadala Curry", "Appam", "Fish Moilee"],
+      "images": [
+        "images/kerala1.jpg",
+        "images/kerala2.jpg",
+        "images/kerala3.jpg",
+        "images/kerala4.jpg"
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6280400.466630272!2d74.18685996821367!3d10.540879448618274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08730155555555%3A0x1234567890abcdef!2sKerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+      "travel": "By flight (Cochin, Trivandrum, Calicut airports), by train (connected to major cities), by road or houseboat."
     }
-  },
-  {
-    "name": "Ooty",
-    "description": "Queen of the Nilgiris, famous for tea gardens and cool weather.",
-    "food": ["Varkey", "Homemade Chocolates", "Dosa"],
-    "images": ["images/ooty1.jpg", "images/ooty2.jpg", "images/ooty3.jpg", "images/ooty4.jpg"],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.4241462595973!2d76.693489!3d11.410204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8bfa1d9c6f31b%3A0x7edff60ef2f8d2c8!2sOoty%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000001!5m2!1sen!2sin",
-    "travel": {
-      "flight": "Nearest airport is Coimbatore (88 km).",
-      "train": "Mettupalayam station connects to Ooty by toy train.",
-      "bus": "Frequent buses from Bangalore, Coimbatore, and Mysore.",
-      "car": "6-hour drive from Bangalore."
-    }
-  },
-  {
-    "name": "Munnar",
-    "description": "A serene hill station in Kerala, covered with tea plantations.",
-    "food": ["Puttu Kadala", "Appam with Stew", "Kerala Parotta"],
-    "images": ["images/munnar1.jpg", "images/munnar2.jpg", "images/munnar3.jpg", "images/munnar4.jpg"],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.676520516877!2d77.057884!3d10.089167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07cf8c23475c37%3A0x3f50a348c279b4a5!2sMunnar%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000002!5m2!1sen!2sin",
-    "travel": {
-      "flight": "Nearest airport: Kochi (110 km).",
-      "train": "Closest station: Aluva (110 km).",
-      "bus": "Regular KSRTC buses from Kochi and Aluva.",
-      "car": "Beautiful 4-hour drive from Kochi."
-    }
-  },
-  {
-    "name": "Manali",
-    "description": "Snow-covered mountains, adventure sports, and scenic valleys.",
-    "food": ["Sidu", "Trout Fish", "Dham"],
-    "images": ["images/manali1.jpg", "images/manali2.jpg", "images/manali3.jpg", "images/manali4.jpg"],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.6478150856663!2d77.176981!3d32.239632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390485d8a07c923b%3A0x94dbb4ab25a2df6d!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000003!5m2!1sen!2sin",
-    "travel": {
-      "flight": "Nearest airport: Bhuntar (50 km).",
-      "train": "Joginder Nagar is the closest railhead.",
-      "bus": "Volvo buses from Delhi & Chandigarh.",
-      "car": "12-hour drive from Delhi."
-    }
-  },
-  {
-    "name": "Jaipur",
-    "description": "The Pink City, famous for forts, palaces, and traditional crafts.",
-    "food": ["Dal Baati Churma", "Ghevar", "Ker Sangri"],
-    "images": ["images/jaipur1.jpg", "images/jaipur2.jpg", "images/jaipur3.jpg", "images/jaipur4.jpg"],
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14226.31184843163!2d75.793457!3d26.912434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3a89c2a74cf%3A0xbddc871263f426!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000004!5m2!1sen!2sin",
-    "travel": {
-      "flight": "Jaipur International Airport connects major cities.",
-      "train": "Jaipur Junction is the main rail hub.",
-      "bus": "Regular buses from Delhi and Agra.",
-      "car": "4-5 hour drive from Delhi."
-    }
-  }
-]
+  ]
+}
