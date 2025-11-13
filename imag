@@ -1,14 +1,6 @@
-<section class="features">
-  <div class="card">
-    <img src="images/paris.jpg" alt="Paris" width="300">
-    <h3>Paris</h3>
-  </div>
-  <div class="card">
-    <img src="images/london.jpg" alt="London" width="300">
-    <h3>London</h3>
-  </div>
-  <div class="card">
-    <img src="images/newyork.jpg" alt="New York" width="300">
-    <h3>New York</h3>
-  </div>
-</section>
+Ooty	ooty1.jpg, ooty2.jpg, ooty3.jpg, ooty4.jpg
+Munnar	munnar1.jpg, munnar2.jpg, munnar3.jpg, munnar4.jpg
+Manali	manali1.jpg, manali2.jpg, manali3.jpg, manali4.jpg
+Shimla	shimla1.jpg, shimla2.jpg, shimla3.jpg, shimla4.jpg
+Darjeeling	darjeeling1.jpg, darjeeling2.jpg, darjeeling3.jpg, darjeeling4.jpg
+Kerala	kerala1.jpg, kerala2.jpg, kerala3.jpg, kerala4.jpg
